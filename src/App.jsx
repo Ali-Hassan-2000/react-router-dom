@@ -11,7 +11,9 @@ const initialState = [
 ];
 
 const App = () => {
+
   const [pokemon, setPokemon] = useState(initialState);
+  
   return (
     <>
       <h1>Pokemon!</h1>
