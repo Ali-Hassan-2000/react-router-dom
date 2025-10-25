@@ -3,6 +3,10 @@ import { useState } from 'react';
 import PokemonList from './components/PokemonList/PokemonList.jsx';
 import NavBar from './components/NavBar/NavBar.jsx';
 
+{/* Defining routes */}
+import { Route, Routes } from 'react-router';
+
+
 const initialState = [
   { _id: 1, name: 'bulbasaur', weight: 69, height: 7 },
   { _id: 2, name: 'ivysaur', weight: 130, height: 10 },
@@ -19,7 +23,13 @@ const App = () => {
     <>
       <NavBar />
       <h1>Pokemon!</h1>
-      <PokemonList pokemon={pokemon} />
+      
+      <Routes>
+        <Route path="/" element={<h2>Home Page</h2>} />
+
+        {/* <PokemonList pokemon={pokemon} /> */}
+        <Route path="/pokemon" element={<PokemonList pokemon={pokemon} />} />
+      </Routes>
     </>
   );
 };
