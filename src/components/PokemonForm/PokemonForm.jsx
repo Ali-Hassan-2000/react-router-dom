@@ -18,7 +18,7 @@ const PokemonForm = (props) => {
     evt.preventDefault();
 
     props.addPokemon(formData);
-    setFormData(initialState);
+    setFormData(initialState); // after navigate we can remove this line
 
     navigate('/pokemon');
   };
