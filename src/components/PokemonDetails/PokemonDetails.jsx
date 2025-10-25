@@ -4,14 +4,18 @@ const PokemonDetails = (props) => {
 
     const { pokemonId } = useParams();
 
+    const singlePokemon = props.pokemon.find((poke) => (
+        poke._id === Number(pokemonId)
+    ));
+
   return (
     <>
       <h2>Pokemon Details</h2>
       <dl>
         <dt>Weight:</dt>
-        <dd></dd>
+        <dd>{singlePokemon.weight}</dd>
         <dt>Height:</dt>
-        <dd></dd>
+        <dd>{singlePokemon.height}</dd>
       </dl>
     </>
   );
