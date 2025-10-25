@@ -12,6 +12,8 @@ const PokemonForm = (props) => {
   const handleSubmit = (evt) => {
     evt.preventDefault();
     
+    props.addPokemon(formData);
+    setFormData(initialState);
   };
 
   const handleChange = ({ target }) => {

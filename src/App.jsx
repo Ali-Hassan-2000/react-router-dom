@@ -20,6 +20,11 @@ const initialState = [
 const App = () => {
 
   const [pokemon, setPokemon] = useState(initialState);
+
+  const addPokemon = (newPokemonData) => {
+    newPokemonData._id = pokemon.length + 1;
+    setPokemon([...pokemon, newPokemonData]);
+  };
   
   return (
     <>
@@ -32,8 +37,8 @@ const App = () => {
         {/* <PokemonList pokemon={pokemon} /> */}
         <Route path="/pokemon" element={<PokemonList pokemon={pokemon} />} />
 
-        <Route path="/pokemon/new" element={<PokemonForm />} />
-        
+        <Route path="/pokemon/new" element={<PokemonForm addPokemon={addPokemon} />} />
+
         <Route path="/pokemon/:pokemonId" element={<PokemonDetails pokemon={pokemon} />} />
 
         <Route path="*" element={<h2>Error 404, nothing here!</h2>} />
