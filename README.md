@@ -1,16 +1,15 @@
-# React + Vite
+# React Router DOM - Custom Implementation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A custom implementation of React Router DOM for educational purposes, demonstrating how client-side routing works in React applications.
 
-Currently, two official plugins are available:
+## 📖 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This repository contains a custom implementation of React Router DOM, providing client-side routing capabilities for React applications. It includes the core components and hooks needed for declarative routing in single-page applications.
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Declarative Routing** - Use React components to define your routes
+- **Dynamic Routing** - Handle dynamic segments and parameters
+- **Navigation** - Programmatic and declarative navigation
+- **Route Matching** - Flexible route matching capabilities
+- **Hook-based API** - React hooks for routing functionality
