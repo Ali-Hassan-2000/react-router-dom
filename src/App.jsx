@@ -24,7 +24,7 @@ const App = () => {
       <NavBar />
       <h1>Pokemon!</h1>
       
-      <Routes>
+      <Routes> {/* Defining outputs for routes */}
         <Route path="/" element={<h2>Home Page</h2>} />
 
         {/* <PokemonList pokemon={pokemon} /> */}
