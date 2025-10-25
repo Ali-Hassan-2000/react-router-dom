@@ -3,6 +3,7 @@ import { useState } from 'react';
 import PokemonList from './components/PokemonList/PokemonList.jsx';
 import NavBar from './components/NavBar/NavBar.jsx';
 import PokemonDetails from './components/PokemonDetails/PokemonDetails';
+import PokemonForm from './components/PokemonForm/PokemonForm';
 
 {/* Defining routes */}
 import { Route, Routes } from 'react-router';
@@ -31,8 +32,9 @@ const App = () => {
         {/* <PokemonList pokemon={pokemon} /> */}
         <Route path="/pokemon" element={<PokemonList pokemon={pokemon} />} />
 
+        <Route path="/pokemon/new" element={<PokemonForm />} />
+        
         <Route path="/pokemon/:pokemonId" element={<PokemonDetails pokemon={pokemon} />} />
-
 
         <Route path="*" element={<h2>Error 404, nothing here!</h2>} />
       </Routes>
